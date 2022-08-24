@@ -12,6 +12,7 @@
     "fijas",
     "agente"
   ],
+  "type": "module",
   "author": "Cristian Santos <santosriberofernando@gmail.com>",
   "license": "MIT"
 }

@@ -1,7 +1,11 @@
+const DIGITS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 class Agent {
+  agentNumber;
   compute(perception) {
     if (perception === 'S') {
-      // El caracter S le indica al agente que debe iniciar un nuevo juego.
+      const shuffled = DIGITS.sort(() => 0.5 - Math.random());
+      this.agentNumber = shuffled.slice(0, 4).join('');
       return 'R';
     }
     if (perception === '#') {
@@ -21,3 +25,5 @@ class Agent {
     }
   }
 }
+
+export default Agent;
