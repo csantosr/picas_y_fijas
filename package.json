@@ -1,0 +1,17 @@
+{
+  "name": "picas_y_fijas",
+  "version": "1.0.0",
+  "description": "Agente para jugar picas y fijas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "picas",
+    "y",
+    "fijas",
+    "agente"
+  ],
+  "author": "Cristian Santos <santosriberofernando@gmail.com>",
+  "license": "MIT"
+}
