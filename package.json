@@ -14,5 +14,8 @@
   ],
   "type": "module",
   "author": "Cristian Santos <santosriberofernando@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
