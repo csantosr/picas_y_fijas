@@ -37,7 +37,7 @@ class Agent {
       this.agentNumber = shuffled.slice(0, 4).join('');
       this.choices = getPermutations(DIGITS, SIZE);
       this.scores = [];
-      this.nextAns = this.choices[0];
+      this.nextAns = this.choices[Math.floor(Math.random()*this.choices.length)];
       return 'R';
     }
     if (perception === '#') {
@@ -70,7 +70,7 @@ class Agent {
         console.log('humano mentiroso');
         return 'A'
       }
-      this.nextAns = this.choices[0];
+      this.nextAns = this.choices[Math.floor(Math.random()*this.choices.length)];
       // Dos números naturales p y f (separados por una coma) tales que su suma sea menor o igual a cuatro (p+f<=4) y que son el número de picas y fijas respecto al número n que el agente actuó anteriormente. Se percibe como cadena de caracteres.
       return 'A';
     }
